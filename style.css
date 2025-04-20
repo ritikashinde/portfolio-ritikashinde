@@ -45,13 +45,33 @@ body {
   .button:hover {
     background-color: #005fa3;
   }
-  .profile-photo {
-  width: 180px;
-  height: 180px;
+  .about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap; /* makes it responsive for smaller screens */
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #0077cc;
-  margin-bottom: 15px;
+  border: 3px solid #007acc; /* optional styling */
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
   
